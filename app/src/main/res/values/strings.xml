@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lab1-MADT</string>
+    <string name="button_text">Button</string>
+    <string name="button_clicked">Button was clicked!</string>
 </resources>
