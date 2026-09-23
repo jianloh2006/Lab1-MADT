@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.button)
         val textView = findViewById<TextView>(R.id.textView)
         val buttonColour = findViewById<Button>(R.id.buttonColour)
+        val buttonBackgroundColour = findViewById<Button>(R.id.buttonBackgroundColour)
 
 
         button.setOnClickListener {
@@ -25,6 +26,11 @@ class MainActivity : AppCompatActivity() {
 
         buttonColour.setOnClickListener {
             textView.setTextColor(getColor(android.R.color.holo_red_dark))
+        }
+
+        buttonBackgroundColour.setOnClickListener {
+            findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.main)
+                .setBackgroundColor(getColor(android.R.color.holo_blue_light))
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
