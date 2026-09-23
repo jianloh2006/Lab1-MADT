@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
             textView.setTextColor(getColor(android.R.color.holo_red_dark))
         }
 
-        //Code for revert
         buttonBackgroundColour.setOnClickListener {
             findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.main)
                 .setBackgroundColor(getColor(android.R.color.holo_blue_light))
