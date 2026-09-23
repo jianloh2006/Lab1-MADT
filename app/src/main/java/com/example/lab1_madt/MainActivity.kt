@@ -16,9 +16,15 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.button)
         val textView = findViewById<TextView>(R.id.textView)
+        val buttonColour = findViewById<Button>(R.id.buttonColour)
+
 
         button.setOnClickListener {
             textView.setText(R.string.button_clicked)
+        }
+
+        buttonColour.setOnClickListener {
+            textView.setTextColor(getColor(android.R.color.holo_red_dark))
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
